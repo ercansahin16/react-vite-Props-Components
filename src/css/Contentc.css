@@ -1,0 +1,61 @@
+.course-main {
+    display: flex;
+    flex-direction: row; /* Varsayılan olarak yatay hizalama */
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 25px;
+    gap: 50px;
+    flex-wrap: wrap;
+    
+}
+.cart:hover {
+    background-color: #f0f0f0; /* Hover sırasında arka plan rengini değiştirir */
+    transform: scale(1.01); /* Hafif bir büyüme efekti ekler */
+    transition: transform 0.8s ease, background-color 0.9s ease; /* Geçiş efekti */
+}
+
+/* Ekran boyutu 768px ve altındaysa (tablet ve mobil cihazlar için) */
+@media (max-width: 768px) {
+    .course-main {
+        flex-direction: column; /* Daha küçük ekranlarda dikey hizalama */
+        gap: 10px; /* Elemanlar arasındaki boşluk daha küçük olabilir */
+    }
+}
+
+/* Ekran boyutu 480px ve altındaysa (mobil cihazlar için) */
+@media (max-width: 480px) {
+    .course-main {
+        margin-top: 15px; /* Daha küçük ekranlar için margin azaltılabilir */
+        gap: 5px; /* Daha küçük boşluk */
+    }
+}
+.cart{
+    border: 1px solid lightgray;
+    padding: 10px 10px;
+    font-family: 'Courier New', Courier, monospace;
+    width: 300px;
+    height: 500px;
+   
+   
+}
+.cart>img{
+    border-radius: 15px;
+    width: 100%;
+}
+.cart>h4>h1>h2>h3>h5>h6{
+  overflow-wrap: break-word;
+     
+}
+.cart>h2{
+    color: coral;
+    text-align: center;
+}
+.cart>div>a{
+    text-decoration: none;
+    color: cadetblue;
+    font-weight: bold;
+    font-size: 20px;
+    
+  
+   
+}
